@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // The Parse App added and initialized
+        Parse.setApplicationId("R0jAx3TEfhblFLazfoDZf6vUoWBjFJ5NG6wJ9Yud", clientKey: "PDBkoWUlVFenr2BzhhpN8IN37y21GjbhcTkTx5ur")
+        
+        PFFacebookUtils.initializeFacebook()
+        
         return true
     }
 
@@ -36,6 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        // Parse handler
+        FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())
+
     }
 
     func applicationWillTerminate(application: UIApplication) {
@@ -43,7 +52,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
-
+    
+    //Parse handlers
+    
+    func application(application: UIApplication,
+        openURL url: NSURL,
+        sourceApplication: String,
+        annotation: AnyObject?) -> Bool {
+            return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication,
+                withSession:PFFacebookUtils.session())
+    }
+    
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
