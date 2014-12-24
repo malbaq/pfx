@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E27716201A4AD13300B14214 /* facebooklogin.png in Resources */ = {isa = PBXBuildFile; fileRef = E277161F1A4AD13300B14214 /* facebooklogin.png */; };
+		E27716221A4AFE9000B14214 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27716211A4AFE9000B14214 /* SignUpViewController.swift */; };
 		E2D2A8021A48761300747843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A8011A48761300747843 /* AppDelegate.swift */; };
 		E2D2A8051A48761300747843 /* PFX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A8031A48761300747843 /* PFX.xcdatamodeld */; };
 		E2D2A8071A48761300747843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A8061A48761300747843 /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E277161F1A4AD13300B14214 /* facebooklogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebooklogin.png; sourceTree = "<group>"; };
+		E27716211A4AFE9000B14214 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E2D2A7FC1A48761300747843 /* PFX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PFX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D2A8001A48761300747843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D2A8011A48761300747843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				E2D2A8011A48761300747843 /* AppDelegate.swift */,
+				E277161F1A4AD13300B14214 /* facebooklogin.png */,
 				E2D2A8061A48761300747843 /* ViewController.swift */,
 				E2D2A8291A487D0000747843 /* Bolts.framework */,
 				E2D2A82A1A487D0000747843 /* Parse.framework */,
@@ -144,6 +149,7 @@
 				E2D2A8031A48761300747843 /* PFX.xcdatamodeld */,
 				E2D2A7FF1A48761300747843 /* Supporting Files */,
 				E2D2A8261A487B2800747843 /* PFX-Bridging-Header.h */,
+				E27716211A4AFE9000B14214 /* SignUpViewController.swift */,
 			);
 			path = PFX;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 				E2D2A80A1A48761300747843 /* Main.storyboard in Resources */,
 				E2D2A80F1A48761300747843 /* LaunchScreen.xib in Resources */,
 				E2D2A80C1A48761300747843 /* Images.xcassets in Resources */,
+				E27716201A4AD13300B14214 /* facebooklogin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +282,7 @@
 			files = (
 				E2D2A8071A48761300747843 /* ViewController.swift in Sources */,
 				E2D2A8051A48761300747843 /* PFX.xcdatamodeld in Sources */,
+				E27716221A4AFE9000B14214 /* SignUpViewController.swift in Sources */,
 				E2D2A8021A48761300747843 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +488,7 @@
 				E2D2A8201A48761300747843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2D2A8211A48761300747843 /* Build configuration list for PBXNativeTarget "PFXTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +497,7 @@
 				E2D2A8231A48761300747843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
