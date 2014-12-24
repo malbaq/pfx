@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         self.loginCancelledLabel.alpha = 0
         
         //Facebook auth and get back public profile and email
-        var permissions = ["public_profile", "email"]
+        var permissions = ["email", "public_profile"]
         PFFacebookUtils.logInWithPermissions(permissions, {
             (user: PFUser!, error: NSError!) -> Void in
             if user == nil {
